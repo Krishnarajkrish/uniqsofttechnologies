@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+  background-color: whitesmoke;   
+} */
+.gridLayout{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading{
+    padding: 20px 0px;
+}
+.heading h1{
+    margin-top: 50px;
+    text-align: center;
+    font-family:"Poppins", sans-serif;
+    font-size: 20px;
+    background-color:#0163FD;
+    filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+    color:white;
+    padding: 15px 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading p{
+    font-family:"Poppins", sans-serif;
+    font-size: 15px;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h6{
+    border: 1px purple dashed;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ourteam{
+    text-align: center;
+    font-family:"Poppins", sans-serif;
+    font-size: 22px;
+}
+h2{
+    text-align: center;
+    font-family:"Poppins", sans-serif;
+    font-size: 18px;
+    background-color: #0163FD;
+    color:white;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin:20px 0px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+/*  */
+.LeadershipTeam{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 30px;
+   margin: 30px 0px;
+}
+.LeadershipOne,.LeadershipTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;
+    width: 100%;
+}
+.leaders ,.developers,.saless{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.leaders img ,.developers img,.saless img{
+    width: 40%;
+    border-radius: 50%;
+    filter: drop-shadow(0 0.5rem 0.2rem rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+}
+.leaders h3 ,.developers h3,.saless h3{
+    font-family:"Poppins", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.leaders h4 ,.developers h4 ,.saless h4{
+    font-family:"Poppins", sans-serif;
+    font-size: 15px;
+    color: #ff7810;
+    text-align: center;
+}
+/*  */
+.DevelopmentTeam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0px;
+}
+.DevelopmentTeamOne,.DevelopmentTeamTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;
+}
+.developers{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+/*  */
+.MarketingTeam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0px;
+    padding-top: 10px;
+}
+.MarketingTeamOne,.MarketingTeamTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;   
+}
+.saless{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* animation */
+.leaders img ,.developers img,.saless img{
+    animation: floating ease 4s infinite;
+}
+@keyframes floating {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(0%, 3%);
+    }
+    50% {
+        transform: translate(0%, 0%);
+    }
+    75% {
+        transform: translate(0%, 3%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+@media screen and (max-width:600px){
+    h2,.heading h1{
+        width: 40%;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:500px){
+    h2,.heading h1{
+        width: 60%;
+        font-size: 16px;
+    }
+    .LeadershipOne,.LeadershipTwo,.DevelopmentTeamOne,.DevelopmentTeamTwo,.MarketingTeamOne,.MarketingTeamTwo{
+         flex-direction: column;
+    }   
+}
